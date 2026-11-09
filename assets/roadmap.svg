@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="160" viewBox="0 0 840 160" role="img" aria-label="Five-year roadmap from foundations through possible graduate study">
+  <rect width="840" height="160" rx="14" fill="#11243c"/>
+  <path d="M90 60 H750" stroke="#b3a369" stroke-width="3"/>
+  <g fill="#d8c88d">
+    <circle cx="90" cy="60" r="8"/><circle cx="255" cy="60" r="8"/>
+    <circle cx="420" cy="60" r="8"/><circle cx="585" cy="60" r="8"/>
+    <circle cx="750" cy="60" r="8"/>
+  </g>
+  <g text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" fill="#fffdf8">
+    <text x="90" y="98">Foundation</text><text x="255" y="98">Hardware</text>
+    <text x="420" y="98">Automation</text><text x="585" y="98">BS design</text>
+    <text x="750" y="98">Possible MS</text>
+  </g>
+  <g text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" fill="#d8c88d">
+    <text x="90" y="125">2026–27</text><text x="255" y="125">2027–28</text>
+    <text x="420" y="125">2028–29</text><text x="585" y="125">2029–30</text>
+    <text x="750" y="125">2030–31</text>
+  </g>
+</svg>
