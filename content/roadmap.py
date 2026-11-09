@@ -1,0 +1,17 @@
+YEARS = [
+    ("2026–27", "Build the foundation",
+     "Focus on introductory computing, math, and engineering design. Use the Arduino Discovery Project to practice connecting software to hardware.",
+     "Document a small build with a photo, a test, and a clear explanation of how it works."),
+    ("2027–28", "Connect theory to hardware",
+     "Build on the math and programming foundation through circuits and digital systems. Explore embedded projects that use sensors and outputs.",
+     "Complete a bench project and compare what I expected to measure with what I actually observed."),
+    ("2028–29", "Explore automation",
+     "Look for coursework and hands-on work that connect embedded systems, controls, and instrumentation. Pursue an internship, co-op, or team project where I can see how those pieces fit together.",
+     "Use feedback from an applied project to narrow down the part of automation I want to study further."),
+    ("2029–30", "Finish the BS and evaluate graduate study",
+     "Use a design project to pull together programming, electronics, testing, and documentation. Check BS/MS eligibility, application timing, and funding with an advisor.",
+     "Finish the undergraduate design work and decide whether a combined degree fits my goals."),
+    ("2030–31", "Pursue graduate work if admitted",
+     "If admitted and the schedule fits, pursue graduate work in an area related to controls, embedded systems, or industrial automation. Keep building experience with projects that have real operating constraints.",
+     "Explain how a system performs, where it falls short, and what I would change before deploying it."),
+]
