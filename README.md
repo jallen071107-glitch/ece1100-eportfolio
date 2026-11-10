@@ -1,7 +1,7 @@
 # Justin Allen | ECE 1100 ePortfolio
 
 A Streamlit portfolio with Georgia Tech navy and gold styling, a five-year EE
-roadmap, and four project detail pages.
+roadmap, and three project detail pages.
 
 ## Run in VS Code
 
@@ -20,11 +20,11 @@ python -m streamlit run app.py
 - **Roadmap years** live in `content/roadmap.py`. Keep `assets/roadmap.svg`
   in sync if the year labels or themes change.
 - **Project descriptions** live in `content/projects.py`. Add genuine app
-  screenshots as `assets/cs-portfolio.png`, `assets/spider-man.png`, or
+  screenshots as `assets/spider-man.png` or
   `assets/ece-portfolio.png` to display them on the matching pages.
 - **Resume** displays and downloads `assets/Justin-Allen-Resume.pdf` when present.
   Use a public-facing copy with private contact details removed.
-- **Contact** reads public email, LinkedIn, and GitHub values from
+- **Contact** reads public email and LinkedIn values from
   `content/contact.py`.
 - **Showcase** reads the original 400+ word feature from
   `content/discovery_showcase.md`. Cover the goal, your role, the circuit and
@@ -39,10 +39,9 @@ requires five photographs or screenshots specifically, add two real project
 screenshots or original photos. Review all images and first-person reflections
 before sharing the site.
 
-## Publish by November 10, 2026
+## Update the live app
 
-Push this folder to a new GitHub repository and select `app.py` as the entry
-point in Streamlit Community Cloud. The app needs no secrets or database.
-After deploying, open the public URL in a signed-out browser and check the
-sidebar, the gallery links, the roadmap, and the public resume and contact
-details before submitting the link.
+Streamlit Community Cloud deploys `app.py` from the `main` branch of
+`jallen071107-glitch/ece1100-eportfolio`. Update the repository with the
+revised files, then verify the changes at the live site. The app needs no
+secrets or database.

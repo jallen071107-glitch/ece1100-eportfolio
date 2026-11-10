@@ -14,49 +14,34 @@ PROJECTS = {
         original photos with captions that point out what each image shows.
         """,
     ),
-    "cs-portfolio": (
-        "CS 1301 Portfolio", "CS 1301 · Web Development Lab 1",
-        "My first Streamlit portfolio, with sections for coursework, experience, and leadership.",
-        """
-        In my first web development lab, I used Streamlit to put my coursework,
-        skills, projects, and leadership experience in one place. I kept the
-        portfolio information in a separate Python file so that changing a course
-        or role did not require rewriting the page. I used a table for coursework
-        and expandable sections for details that a visitor might want to read.
-
-        This project gave me a starting point for the ECE portfolio. Here, I’ve
-        given the projects their own pages so a reader can go directly to the
-        work they’re interested in.
-        """,
-    ),
     "spider-man": (
-        "Spider-Man Quiz & Survey", "CS 1301 · Interactive web apps",
-        "Coursework that uses fan prompts and a dashboard to practice input, filtering, and visualization.",
+        "Spider-Man Fan Survey & Dashboard", "CS 1301 · Interactive web apps",
+        "An eight-question fan survey and a dashboard for comparing responses and game data.",
         """
-        The Spider-Man fan dashboard brings together game data and an eight-question
-        survey. The survey collects responses in a CSV, and the Visuals page lets
-        users select a district or a fan group to see how the displayed summaries
-        change. I added explanations alongside the charts so that a visitor can tell
-        what the values represent and which selection they’re looking at.
+        I wanted to see if I could make a survey that was fun to fill out and still
+        left me with data I could use. The questions range from favorite actors and
+        movies to how familiar someone is with Spider-Man. Each submission goes
+        into a CSV file that the dashboard reads back.
 
-        The most useful part of this work was following a value from the input
-        through the saved data and into the chart. It gave me practice checking
-        whether the interface and the calculation were telling the same story.
+        The game data is separate from the survey responses. On the Visuals page,
+        you can compare activities across game districts or look at fan answers by
+        group. I put the average and median next to the charts so the numbers make
+        sense without digging through the raw data.
         """,
     ),
     "ece-portfolio": (
-        "ECE 1100 ePortfolio", "ECE 1100 · Streamlit",
-        "This site brings my engineering interests, coursework, leadership, and plans together.",
+        "Engineering Portfolio", "Streamlit",
+        "The site you’re on now, built with Python and Streamlit.",
         """
-        I wanted a visitor to be able to find a project quickly and still have
-        enough context to understand what I worked on. The gallery gives each
-        project a short introduction, and the detail pages make room for design
-        decisions, screenshots, and reflections as the work develops.
+        I wanted this site to be easy to update as I get further into EE. The
+        page layouts are separate from the writing, so I can add a project photo
+        or change a description without rebuilding the page. Each project has its
+        own link, which makes it easier to share one thing I worked on.
 
-        The roadmap organizes my goals into five selectable years. I can revise
-        the milestones as I get more experience and learn what graduate study
-        would involve. The portfolio text and assets are separate from the
-        navigation, so adding a photo or updating a project is a small edit.
+        On the first version, the homepage got crowded with the sidebar open.
+        I adjusted the layout so the text and portrait can stack when there’s
+        less room. The five-year roadmap is another part I expect to revisit as
+        I take more classes and get a better idea of the work I enjoy.
         """,
     ),
 }

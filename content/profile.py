@@ -1,46 +1,49 @@
 ABOUT = """
-I'm Justin Allen, an electrical engineering student at Georgia Tech. I’m interested
-in circuit design, embedded systems, and the way software can control something
-physical. Industrial automation stands out to me because it brings those interests
-together. A system has to read what’s happening, decide what to do, and keep working
-when the conditions around it change.
+I'm in my first year of electrical engineering at Georgia Tech. I'm interested in
+what happens between a sensor picking something up and a machine responding. There's
+the signal from the sensor, the circuit that carries it, and the code that decides
+what to do with it. That's part of what drew me to embedded systems and automation.
+I also want to try more circuit design and see which parts of EE I enjoy once I've
+had more time in the lab.
 
-In my first semester, I’m building foundations in computing, calculus, and engineering
-design. My CS 1301 projects gave me a chance to turn Python exercises into web apps
-other people can use. In ECE 1100, the Arduino Discovery Project gives me a place to
-explore the connection between code and hardware. I want to get better at explaining
-what I tried, how I tested it, and what I would change the next time.
+In high school, I competed in Electrical Applications through TSA. We worked from
+schematics, built circuits on breadboards, and had to figure out where to look when
+something was off. Our chapter made it to nationals for the first time. That
+experience made me want to spend more time with circuits, especially the part
+where you can compare what you expected with what you actually measured.
 
-My interest in engineering also comes from working with other people. In high school,
-I led my Technology Student Association chapter and served as Student Government
-Association vice president. Those roles gave me practice organizing work and listening
-to people with different priorities. I bring that same approach to technical projects:
-get clear on what the group is trying to accomplish, then make the next step manageable.
+I also got to see how other students approach a problem during a school exchange
+in Nuremberg, Germany. Working with students there meant paying attention to how
+I explained things and asking questions when I missed something. At Tech, I'm
+looking for a chance to work on a design team and an internship where I can get
+more experience with testing or design while I figure out which area of EE fits me.
+
 """
 
 EXPERIENCE = [
     ("Tidal Wave Auto Spa", "Team Lead", None,
-     "I trained and supported new team members during daily operations, helped coordinate responsibilities, and worked directly with customers. The role gave me practice explaining a task clearly while keeping track of what the rest of the team needed."),
+     "I helped train and onboard 12 team members and helped keep daily operations moving. I split my time between helping customers and making sure the team knew what needed attention. Training someone new meant explaining the job while we were doing it and giving them room to ask questions."),
     ("Clark Scholars Program", "Clark Scholar at Georgia Tech", "clark.png",
-     "As a Clark Scholar, I’ve taken part in leadership, academic, and professional development opportunities at Georgia Tech. Getting to know other scholars has given me a way to learn how students with different interests approach their first years in engineering."),
+     "Through the Clark Scholars Program, I've gotten to know students who came to Georgia Tech with different ideas about what they wanted to study. I get to hear what they're trying in their own majors as I figure out what I want to explore in EE."),
     ("The Gates Scholarship", "Gates Scholar", "gates.jpg",
-     "I attended the Gates Scholarship Summer Institute in Phoenix, Arizona. Through workshops and conversations with other scholars, I practiced introducing myself, building connections, and thinking through what I wanted to get out of college."),
+     "I attended the Gates Scholarship Summer Institute in Phoenix, Arizona, where I took part in workshops and met other scholars. Those conversations gave me a chance to talk through what I wanted to get out of college with people who were asking themselves the same thing."),
 ]
 
 LEADERSHIP = """
-At Georgia Tech, I’m a member of the National Society of Black Engineers. In high
-school, I represented student interests and helped organize events as Student
-Government Association vice president. I also served as Technology Student
-Association president during my senior year, when our chapter qualified for the
-national conference for the first time. That experience gave me a chance to see
-how much a team can do when people know what they’re responsible for.
+I'm a member of the National Society of Black Engineers at Georgia Tech. In high
+school, I represented students and helped organize events as Student Government
+Association vice president. I also served as Technology Student Association
+president. I coordinated meetings and split up responsibilities in a chapter of
+more than 40 students.
 """
 
 SKILLS = [
-    ("Python and Streamlit", "Practiced in CS 1301",
-     "I use Python to organize app logic, handle input, and work with data. Streamlit gives me a way to put that work behind an interface. I’m getting more comfortable separating page layout from data and checking what happens when someone uses the app in a different order than I expected."),
-    ("Data and debugging", "Practiced in CS 1301",
-     "In the Spider-Man app, I worked with CSV survey responses and game data. I used filters and summary statistics to show how the picture changes across districts or groups of fans. When something breaks, I try to narrow the problem down to the input, the calculation, or the way the page presents it."),
-    ("Circuits and microcontrollers", "Developing through ECE 1100",
-     "I’m building experience with Arduino and learning how to connect what a program tells a circuit to do with what I can observe on the bench. I want to build a habit of testing one piece at a time and keeping notes that make the setup reproducible."),
+    ("Programming",
+     "I use Python to handle input, work with files, and break a program into functions I can test on their own. I can also build simple interfaces with Streamlit. I like being able to give someone a way to use a program without asking them to read the code first."),
+    ("Data analysis and visualization",
+     "I can read and organize CSV data, filter it to answer a specific question, and use summary statistics to compare groups. When I make a chart, I think about what the reader needs to know to interpret it, like what the units are or which data went into the comparison."),
+    ("Electronics and troubleshooting",
+     "I'm getting comfortable with breadboard circuits and basic Arduino programming. When something behaves differently than I expect, I try to narrow it down before changing the whole setup. That might mean checking a connection, trying a simpler input, or running one part of the code on its own."),
+    ("Communication and teamwork",
+     "I’m comfortable speaking in front of a group, walking someone through a task, and writing up the steps I took. When I’m working with a team, I try to make it clear what I’ve finished and what I still need from someone else."),
 ]

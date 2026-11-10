@@ -24,12 +24,7 @@ def home():
     introduction, portrait = st.columns([3, 2], gap="large", vertical_alignment="center")
     with introduction:
         heading("GEORGIA TECH  /  ELECTRICAL ENGINEERING", "Hi, I’m Justin.",
-                "I’m exploring circuits, embedded systems, and industrial automation.")
-        st.markdown(
-            "I’m an electrical engineering student at Georgia Tech. This portfolio "
-            "follows what I’m building in ECE 1100 and CS 1301 and how those projects "
-            "are shaping what I want to work on next."
-        )
+                "I’m in my first year at Tech. Here’s what I’m working on and where I’d like to go next.")
         st.page_link(st.Page(projects, url_path="projects"), label="Explore my projects", icon=":material/arrow_forward:")
         st.page_link(st.Page(roadmap, url_path="roadmap"), label="See my five-year roadmap", icon=":material/route:")
     with portrait:
@@ -45,13 +40,13 @@ def about():
 
 
 def experience():
-    heading("PEOPLE & RESPONSIBILITY", "Experience & Leadership")
+    st.title("Experience & Leadership")
     for organization, role, image, details in EXPERIENCE:
         with st.container(border=True):
             description = st.container()
             if image:
                 photo, description = st.columns([1, 3], gap="medium", vertical_alignment="center")
-                photo.image(str(ASSETS / image), width=170, caption=organization)
+                photo.image(str(ASSETS / image), width=170)
             with description:
                 st.caption(organization)
                 st.subheader(role)
@@ -61,18 +56,15 @@ def experience():
 
 
 def skills():
-    heading("TECHNICAL TOOLKIT", "Skills")
-    for title, stage, details in SKILLS:
-        with st.container(border=True):
-            st.caption(stage)
-            st.subheader(title)
-            st.markdown(details)
+    st.title("Skills")
+    for title, details in SKILLS:
+        st.subheader(title)
+        st.markdown(details)
 
 
 def roadmap():
-    heading("CAREER GOALS", "Five-Year EE Roadmap",
-            "My working plan for exploring industrial automation through electrical engineering.")
-    st.caption("Aspirational BS/MS path. Milestones depend on coursework, advising, and admission.")
+    st.title("Five-Year EE Roadmap")
+    st.markdown("Here’s what I’m doing now and what I’d like to try over the next few years.")
     st.image(str(ASSETS / "roadmap.svg"), caption="Five academic years at a glance")
     selection = st.select_slider(
         "Explore an academic year", options=[item[0] for item in YEARS], key="roadmap_year"
@@ -84,7 +76,7 @@ def roadmap():
         st.caption(selection)
         st.subheader(title)
         st.markdown(details)
-        st.markdown(f"**Milestone to aim for**\n\n{milestone}")
+        st.markdown(milestone)
 
 
 def project_cards(slugs):
@@ -99,8 +91,7 @@ def project_cards(slugs):
 
 
 def projects():
-    heading("SELECTED WORK", "Projects",
-            "A closer look at the software I’ve built and the hardware I’m learning to work with.")
+    st.title("Projects")
     project_cards(tuple(PROJECTS))
 
 
@@ -113,6 +104,8 @@ def project_page(slug):
     if screenshot.is_file():
         st.image(str(screenshot), caption=f"Screenshot of {title}")
     if slug == "spider-man":
+        st.link_button("Open the Spider-Man dashboard",
+                       "https://lab2webdevallen-j5byeyazwx6ctmblgbcwut.streamlit.app/")
         st.image(str(ASSETS / "survey-flow.svg"), caption="How survey responses reach the Visuals page")
     if slug == "discovery":
         st.header("Showcase")
@@ -129,33 +122,23 @@ def project_page(slug):
 
 def resume():
     heading("PROFESSIONAL BACKGROUND", "Resume")
-    st.markdown("**Justin Allen** · Electrical Engineering · Georgia Tech")
     with st.container(border=True):
-        st.subheader("Resume preview")
         pdf = ASSETS / "Justin-Allen-Resume.pdf"
         if pdf.is_file():
-            st.pdf(pdf, height=620)
-            st.download_button("Download resume", pdf.read_bytes(), pdf.name, "application/pdf")
+            data = pdf.read_bytes()
+            st.download_button("Download resume (PDF)", data, pdf.name, "application/pdf")
+            st.pdf(data, height=650, alt="Justin Allen’s resume")
         else:
             st.caption("My resume will be available here.")
             st.download_button("Download resume", b"", disabled=True)
 
 
 def contact_page():
-    heading("GET IN TOUCH", "Contact")
-    channels = [
-        ("Email", f"mailto:{contact.EMAIL}" if contact.EMAIL else ""),
-        ("LinkedIn", contact.LINKEDIN),
-        ("GitHub", contact.GITHUB),
-    ]
-    for column, (name, url) in zip(st.columns(3), channels):
-        with column.container(border=True):
-            st.subheader(name)
-            if url:
-                st.link_button(f"Open {name}", url)
-            else:
-                st.caption("Coming soon")
+    st.title("Contact")
+    st.markdown(f"[{contact.EMAIL}](mailto:{contact.EMAIL})")
+    st.link_button("Connect on LinkedIn", contact.LINKEDIN)
 
 
 def project_route(slug):
-    return st.Page(partial(project_page, slug), title=PROJECTS[slug][0], url_path=slug)
+    return st.Page(partial(project_page, slug), title=PROJECTS[slug][0],
+                   url_path=slug, visibility="hidden")
