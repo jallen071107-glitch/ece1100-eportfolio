@@ -26,10 +26,8 @@ pages = {
         st.Page(portfolio.resume, title="Resume", url_path="resume"),
         st.Page(portfolio.contact_page, title="Contact", url_path="contact"),
     ],
-    "Project pages": [
-        portfolio.project_route(slug) for slug in PROJECTS
-    ],
+    "Project pages": [portfolio.project_route(slug) for slug in PROJECTS],
 }
 st.navigation(pages).run()
 st.divider()
-st.caption("JUSTIN ALLEN  /  GEORGIA TECH  /  ECE 1100")
+st.caption("JUSTIN ALLEN  /  GEORGIA TECH")
