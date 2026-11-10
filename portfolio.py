@@ -57,9 +57,11 @@ def experience():
 
 def skills():
     st.title("Skills")
-    for title, details in SKILLS:
-        st.subheader(title)
-        st.markdown(details)
+    for start in range(0, len(SKILLS), 2):
+        for column, (title, details) in zip(st.columns(2), SKILLS[start:start + 2]):
+            with column.container(border=True):
+                st.subheader(title)
+                st.markdown(details)
 
 
 def roadmap():
