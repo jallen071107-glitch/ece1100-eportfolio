@@ -28,12 +28,24 @@ more than 40 students.
 """
 
 SKILLS = [
-    ("Programming",
-     "I use Python to handle input, work with files, and break a program into functions I can test on their own. I can also build simple interfaces with Streamlit. I like being able to give someone a way to use a program without asking them to read the code first."),
-    ("Data analysis and visualization",
-     "I can read and organize CSV data, filter it to answer a specific question, and use summary statistics to compare groups. When I make a chart, I think about what the reader needs to know to interpret it, like what the units are or which data went into the comparison."),
-    ("Electronics and troubleshooting",
-     "I'm getting comfortable with breadboard circuits and basic Arduino programming. When something behaves differently than I expect, I try to narrow it down before changing the whole setup. That might mean checking a connection, trying a simpler input, or running one part of the code on its own."),
-    ("Communication and teamwork",
-     "I’m comfortable speaking in front of a group, walking someone through a task, and writing up the steps I took. When I’m working with a team, I try to make it clear what I’ve finished and what I still need from someone else."),
+    (
+        "Programming & web apps",
+        "- **Python** · Handle user input, read and write files, and debug functions.\n"
+        "- **Streamlit** · Build simple web interfaces with forms and interactive controls.",
+    ),
+    (
+        "Electronics & troubleshooting",
+        "- **Breadboards** · Build circuits from schematics and check wiring when something’s off.\n"
+        "- **Arduino** · Write and test basic code that reads inputs and controls outputs.",
+    ),
+    (
+        "Data analysis & visualization",
+        "- **pandas** · Read CSV files, filter rows, and compare groups using averages and medians.\n"
+        "- **Plotly** · Build interactive charts with clear labels and units.",
+    ),
+    (
+        "Technical communication",
+        "- **Documentation** · Write down setup and testing steps so someone else can repeat them.\n"
+        "- **Team training** · Demonstrate a task and answer questions while someone tries it.",
+    ),
 ]
