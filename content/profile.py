@@ -1,23 +1,13 @@
 ABOUT = """
-I'm in my first year of electrical engineering at Georgia Tech. I'm interested in
-what happens between a sensor picking something up and a machine responding. There's
-the signal from the sensor, the circuit that carries it, and the code that decides
-what to do with it. That's part of what drew me to embedded systems and automation.
-I also want to try more circuit design and see which parts of EE I enjoy once I've
-had more time in the lab.
+I'm Justin Allen, an Atlanta native and first-year Electrical Engineering student at the Georgia Institute of Technology. My interest in engineering comes from a curiosity about the technology that surrounds us and how much it continues to shape our world. I've always been fascinated by how quickly technology advances, turning what once seemed almost impossible into something we use every day. That curiosity led me to pursue electrical engineering, a field that allows me to explore how these systems work, understand the ideas behind them, and eventually contribute to developing new technologies.
 
-In high school, I competed in Electrical Applications through TSA. We worked from
-schematics, built circuits on breadboards, and had to figure out where to look when
-something was off. Our chapter made it to nationals for the first time. That
-experience made me want to spend more time with circuits, especially the part
-where you can compare what you expected with what you actually measured.
+I graduated as the salutatorian of Benjamin E. Mays High School's Class of 2026. My high school experience helped me develop a stronger work ethic and encouraged me to set higher expectations for myself. I'm grateful for the support of my family, teachers, and mentors, who played an important role in helping me reach this point. As a Gates Scholar and Clark Scholar, I hope to make the most of the opportunities I've been given while continuing to grow personally and academically.
 
-I also got to see how other students approach a problem during a school exchange
-in Nuremberg, Germany. Working with students there meant paying attention to how
-I explained things and asking questions when I missed something. At Tech, I'm
-looking for a chance to work on a design team and an internship where I can get
-more experience with testing or design while I figure out which area of EE fits me.
+Outside of academics, I've gained professional experience working as a Team Lead at Tidal Wave Auto Spa. I'm also involved with the National Society of Black Engineers (NSBE), where I've had opportunities to connect with other engineering students, learn from upperclassmen, and gain a better understanding of the profession.
 
+In my free time, I enjoy staying active, spending time with family and friends, and occasionally exploring digital archaeology, whether that's looking through old websites, archived media, or forgotten parts of the internet. I enjoy seeing how technology and digital culture have changed over time.
+
+As I continue through Georgia Tech, I'm exploring interests in circuit design, embedded systems, and automation. I still have plenty to learn, but I'm looking forward to gaining more hands-on experience, meeting people in the industry, and figuring out where I can make the greatest contribution.
 """
 
 EXPERIENCE = [
